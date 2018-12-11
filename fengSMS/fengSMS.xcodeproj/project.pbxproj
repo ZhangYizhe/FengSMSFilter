@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6267EF4D21BDF0CE003BD812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267EF4C21BDF0CE003BD812 /* AppDelegate.swift */; };
+		6267EF4F21BDF0CE003BD812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267EF4E21BDF0CE003BD812 /* ViewController.swift */; };
+		6267EF5221BDF0CE003BD812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6267EF5021BDF0CE003BD812 /* Main.storyboard */; };
+		6267EF5421BDF0CF003BD812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6267EF5321BDF0CF003BD812 /* Assets.xcassets */; };
+		6267EF5721BDF0CF003BD812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6267EF5521BDF0CF003BD812 /* LaunchScreen.storyboard */; };
+		6267EF6B21BDF8E7003BD812 /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267EF6A21BDF8E7003BD812 /* MessageFilterExtension.swift */; };
+		6267EF6F21BDF8E7003BD812 /* smsFilter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6267EF6821BDF8E7003BD812 /* smsFilter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6267EF7621BDFF03003BD812 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6267EF7521BDFF03003BD812 /* FilterModel.swift */; };
+		62FE1B9B21BE1A6F0040DCDB /* sms.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 62FE1B9A21BE1A6F0040DCDB /* sms.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6267EF6D21BDF8E7003BD812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6267EF4121BDF0CE003BD812 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6267EF6721BDF8E7003BD812;
+			remoteInfo = smsFilter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6267EF7321BDF8E7003BD812 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6267EF6F21BDF8E7003BD812 /* smsFilter.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6267EF4921BDF0CE003BD812 /* fengSMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fengSMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6267EF4C21BDF0CE003BD812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6267EF4E21BDF0CE003BD812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6267EF5121BDF0CE003BD812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6267EF5321BDF0CF003BD812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6267EF5621BDF0CF003BD812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6267EF5821BDF0CF003BD812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6267EF6821BDF8E7003BD812 /* smsFilter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = smsFilter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6267EF6A21BDF8E7003BD812 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
+		6267EF6C21BDF8E7003BD812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6267EF7521BDFF03003BD812 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
+		62FE1B9A21BE1A6F0040DCDB /* sms.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sms.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6267EF4621BDF0CE003BD812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6267EF6521BDF8E7003BD812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6267EF4021BDF0CE003BD812 = {
+			isa = PBXGroup;
+			children = (
+				6267EF4B21BDF0CE003BD812 /* fengSMS */,
+				6267EF6921BDF8E7003BD812 /* smsFilter */,
+				6267EF4A21BDF0CE003BD812 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6267EF4A21BDF0CE003BD812 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6267EF4921BDF0CE003BD812 /* fengSMS.app */,
+				6267EF6821BDF8E7003BD812 /* smsFilter.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6267EF4B21BDF0CE003BD812 /* fengSMS */ = {
+			isa = PBXGroup;
+			children = (
+				6267EF4C21BDF0CE003BD812 /* AppDelegate.swift */,
+				6267EF4E21BDF0CE003BD812 /* ViewController.swift */,
+				6267EF5021BDF0CE003BD812 /* Main.storyboard */,
+				6267EF5321BDF0CF003BD812 /* Assets.xcassets */,
+				6267EF5521BDF0CF003BD812 /* LaunchScreen.storyboard */,
+				6267EF5821BDF0CF003BD812 /* Info.plist */,
+			);
+			path = fengSMS;
+			sourceTree = "<group>";
+		};
+		6267EF6921BDF8E7003BD812 /* smsFilter */ = {
+			isa = PBXGroup;
+			children = (
+				6267EF7921BDFF33003BD812 /* MLModel */,
+				6267EF7421BDFEF6003BD812 /* Models */,
+				6267EF6A21BDF8E7003BD812 /* MessageFilterExtension.swift */,
+				6267EF6C21BDF8E7003BD812 /* Info.plist */,
+			);
+			path = smsFilter;
+			sourceTree = "<group>";
+		};
+		6267EF7421BDFEF6003BD812 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6267EF7521BDFF03003BD812 /* FilterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6267EF7921BDFF33003BD812 /* MLModel */ = {
+			isa = PBXGroup;
+			children = (
+				62FE1B9A21BE1A6F0040DCDB /* sms.mlmodel */,
+			);
+			path = MLModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6267EF4821BDF0CE003BD812 /* fengSMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6267EF5B21BDF0CF003BD812 /* Build configuration list for PBXNativeTarget "fengSMS" */;
+			buildPhases = (
+				6267EF4521BDF0CE003BD812 /* Sources */,
+				6267EF4621BDF0CE003BD812 /* Frameworks */,
+				6267EF4721BDF0CE003BD812 /* Resources */,
+				6267EF7321BDF8E7003BD812 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6267EF6E21BDF8E7003BD812 /* PBXTargetDependency */,
+			);
+			name = fengSMS;
+			productName = fengSMS;
+			productReference = 6267EF4921BDF0CE003BD812 /* fengSMS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6267EF6721BDF8E7003BD812 /* smsFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6267EF7021BDF8E7003BD812 /* Build configuration list for PBXNativeTarget "smsFilter" */;
+			buildPhases = (
+				6267EF6421BDF8E7003BD812 /* Sources */,
+				6267EF6521BDF8E7003BD812 /* Frameworks */,
+				6267EF6621BDF8E7003BD812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smsFilter;
+			productName = smsFilter;
+			productReference = 6267EF6821BDF8E7003BD812 /* smsFilter.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6267EF4121BDF0CE003BD812 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.feng;
+				TargetAttributes = {
+					6267EF4821BDF0CE003BD812 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6267EF6721BDF8E7003BD812 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6267EF4421BDF0CE003BD812 /* Build configuration list for PBXProject "fengSMS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6267EF4021BDF0CE003BD812;
+			productRefGroup = 6267EF4A21BDF0CE003BD812 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6267EF4821BDF0CE003BD812 /* fengSMS */,
+				6267EF6721BDF8E7003BD812 /* smsFilter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6267EF4721BDF0CE003BD812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6267EF5721BDF0CF003BD812 /* LaunchScreen.storyboard in Resources */,
+				6267EF5421BDF0CF003BD812 /* Assets.xcassets in Resources */,
+				6267EF5221BDF0CE003BD812 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6267EF6621BDF8E7003BD812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6267EF4521BDF0CE003BD812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6267EF4F21BDF0CE003BD812 /* ViewController.swift in Sources */,
+				6267EF4D21BDF0CE003BD812 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6267EF6421BDF8E7003BD812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6267EF6B21BDF8E7003BD812 /* MessageFilterExtension.swift in Sources */,
+				62FE1B9B21BE1A6F0040DCDB /* sms.mlmodel in Sources */,
+				6267EF7621BDFF03003BD812 /* FilterModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6267EF6E21BDF8E7003BD812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6267EF6721BDF8E7003BD812 /* smsFilter */;
+			targetProxy = 6267EF6D21BDF8E7003BD812 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6267EF5021BDF0CE003BD812 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6267EF5121BDF0CE003BD812 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6267EF5521BDF0CF003BD812 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6267EF5621BDF0CF003BD812 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6267EF5921BDF0CF003BD812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6267EF5A21BDF0CF003BD812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6267EF5C21BDF0CF003BD812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F46RGHR26W;
+				INFOPLIST_FILE = fengSMS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feng.fengSMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6267EF5D21BDF0CF003BD812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F46RGHR26W;
+				INFOPLIST_FILE = fengSMS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feng.fengSMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6267EF7121BDF8E7003BD812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F46RGHR26W;
+				INFOPLIST_FILE = smsFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feng.fengSMS.smsFilter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6267EF7221BDF8E7003BD812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F46RGHR26W;
+				INFOPLIST_FILE = smsFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.feng.fengSMS.smsFilter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6267EF4421BDF0CE003BD812 /* Build configuration list for PBXProject "fengSMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6267EF5921BDF0CF003BD812 /* Debug */,
+				6267EF5A21BDF0CF003BD812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6267EF5B21BDF0CF003BD812 /* Build configuration list for PBXNativeTarget "fengSMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6267EF5C21BDF0CF003BD812 /* Debug */,
+				6267EF5D21BDF0CF003BD812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6267EF7021BDF8E7003BD812 /* Build configuration list for PBXNativeTarget "smsFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6267EF7121BDF8E7003BD812 /* Debug */,
+				6267EF7221BDF8E7003BD812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6267EF4121BDF0CE003BD812 /* Project object */;
+}
